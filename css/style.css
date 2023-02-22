@@ -106,6 +106,16 @@ li,a {
     overflow: auto;
     background-color: var(--main-color);
 }
+.nav-main ul {
+    padding: 40px;
+    justify-content: center;
+    display: flex;
+}
+.nav-main li,a{
+    padding: 0 5px;
+    font-size: 15px;
+    color: var(--letter-gray);
+}
 .call{
     position: fixed;
     top: 0;
@@ -117,15 +127,29 @@ li,a {
 .section {
     margin-top: 60px;
 }
+.section-box h2 {
+    padding: 10px 0;
+}
 .section-box{
     padding: 10px;
     border: 1px solid white;
+    
 }
 .box-image {
-    margin-left: -10px;
-    margin-right: -10px;
+    margin-left: -5px;
+    margin-right: -5px;
+    
+}
+.testo {
+    text-align: center;
+}
+.testo h3 {
+    padding: 10px 0;
 }
 .image-col {
-    padding: 10px;
+    padding: 5px;
     width: calc(100% / 6);
+}
+.image-col img {
+    width: 100%;
 }
