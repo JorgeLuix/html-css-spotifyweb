@@ -20,7 +20,12 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 /**********UTILITIES*********/
-
+.padding-small{
+    padding: 10px 10px;
+}
+.pad-to-bo{
+    padding: 15px 0;
+}
 .upercase{
     text-transform: uppercase;
 }
@@ -33,6 +38,9 @@ body {
 .align-center{
     align-items: center;
     align-content: center;
+}
+.txt-center {
+    text-align: center;
 }
 
 .butom {
@@ -131,13 +139,11 @@ li,a {
     padding: 10px 0;
 }
 .section-box{
-    padding: 10px;
-    border: 1px solid white;
-    
+    padding: 15px;   
 }
 .box-image {
-    margin-left: -5px;
-    margin-right: -5px;
+    margin-left: -10px;
+    margin-right: -10px;
     
 }
 .testo {
@@ -146,10 +152,23 @@ li,a {
 .testo h3 {
     padding: 10px 0;
 }
+.box-creato{
+    padding: 2rem 15px;
+}
+.box-creato p{
+    padding: 10px 0;
+}
+
 .image-col {
     padding: 5px;
     width: calc(100% / 6);
 }
 .image-col img {
     width: 100%;
+}
+.image-arti img{
+    border-radius: 50%;
+}
+.artisti p{
+    padding-bottom: 20px;
 }
