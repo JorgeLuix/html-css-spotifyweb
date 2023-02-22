@@ -20,6 +20,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 /**********UTILITIES*********/
+
 .upercase{
     text-transform: uppercase;
 }
@@ -33,6 +34,7 @@ body {
     align-items: center;
     align-content: center;
 }
+
 .butom {
     padding: 10px 30px;
     display: inline-block;
@@ -62,11 +64,42 @@ body {
     height: 90px;
     background-color: var(--playbar);
 }
+/***************NAV-CONTAIN*********/
 .nav-contain {
     width: 230px;
     min-height: 480px;
     background-color: var(--black-nav);
+    padding: 20px;
 }
+
+.nav-contain img {
+    width: 150px;
+    padding-bottom: 20px;
+}
+li,a {
+    text-decoration: none;
+    list-style: none;
+}
+.nav-home li{
+    padding: 10px 0;
+}
+.nav-home a {
+    color: var(--letter-gray);
+}
+.playlist a,li {
+    padding: 10px 0;
+    color: var(--letter-gray);
+}
+#play-list .di-flex{
+    padding: 15px 0;
+}
+#play-list h4 {
+    padding: 10px 0;
+}
+#play-list i {
+    font-size: 2rem;
+}
+/***************NAV-CONTAIN*********/
 .contenuto{
     width: calc(100% - 230px);
     height: 100%;
