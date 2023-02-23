@@ -84,6 +84,16 @@ body {
     min-height: 480px;
     background-color: var(--black-nav);
     padding: 20px;
+    overflow: hidden;
+}
+.box-nav {
+    width: 100%;
+    height: calc(100% - 80px);
+}
+.bottom-box {
+    width: 100%;
+    height: 80px;
+    border: 1px solid aqua;
 }
 .logo-primary, .logo-small img{
     width: 70%;
@@ -95,6 +105,24 @@ body {
 .logo-small {
     padding: 5px;
     display: none;
+}
+.nav-home img {
+    width: 20%;
+    opacity: 1;
+}
+.nav-home a:hover img {
+    opacity: 2;
+}
+.nav-home a{
+    border-left: 3px solid transparent;
+    padding: 10px;
+}
+.nav-home a:hover, 
+.nav-home a.fisso{  
+    border-left: 3px solid var(--contrast-color);
+}
+.nav-home span {
+    padding-left: 5px;
 }
 li,a {
     text-decoration: none;
@@ -131,10 +159,27 @@ li,a {
     justify-content: center;
     display: flex;
 }
-.nav-main li,a{
-    padding: 0 5px;
+.nav-main li{
+    padding: 5px 15px;
     font-size: 15px;
     color: var(--letter-gray);
+    display: block;  
+}
+.nav-main li a {
+    color: var(--letter-gray);
+    display: block;
+}
+.section nav ul li:after{
+    height: 2px;
+    width: 50%;
+    content: '';
+    margin: 0 auto;
+    background-color: transparent;
+    display: block;
+}
+.section nav ul li:hover:after,
+.section nav ul li.unico:after {
+    background-color: var(--contrast-color);
 }
 .call{
     position: fixed;
@@ -154,7 +199,8 @@ li,a {
     padding: 15px;   
 }
 .box-image {
-   
+    margin-left: -15px;
+    margin-right: -15px;
 }
 .testo {
     text-align: center;
@@ -171,7 +217,7 @@ li,a {
 
 .image-col {
     padding: 5px;
-    width: calc((100% / 6) - 15px);
+    width: calc(100% / 6);
 }
 .image-col img {
     width: 100%;
@@ -186,12 +232,11 @@ li,a {
 
 
 .box-image .list {
-    display: flex;
+    
     font-size: 22px;
     margin-bottom: 20px;
 }
 .box-image .list .item{
-    min-width: 240px;
     width: 100%;
     padding: 15px;
     background-color: #181818;
@@ -311,13 +356,34 @@ li,a {
 /***************MEDIA QUERY*************/
 @media screen and (max-width: 1200px) {
     .image-col {
-        width: calc((100% / 4) - 15px);
+        width: calc((100% / 4) - 5px);
     }
 }
 @media screen and (max-width: 992px) {
     .image-col {
         width: calc(100% / 3);
     }
+}
+@media screen and (max-width: 768px) {
+    .image-col {
+        width: calc(100% / 2);
+    }
+}
+@media screen and (max-width: 576px) {
+    .nav-contain {
+        width: 60px;
+    }
+   
+    .contenuto{
+        width: calc(100% - 60px);
+    }
+    .logo-small{
+        display: block;
+    }
+    .logo-primary{
+        display: none;
+    }
+    
 }
 
 
