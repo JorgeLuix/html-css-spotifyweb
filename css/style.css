@@ -166,9 +166,67 @@ li,a {
 .image-col img {
     width: 100%;
 }
-.image-arti img{
+#artista img{
     border-radius: 50%;
 }
+
 .artisti p{
     padding-bottom: 20px;
+}
+
+
+.box-image .list {
+    display: flex;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.box-image .list .item{
+    min-width: 240px;
+    width: 100%;
+    padding: 15px;
+    background-color: #181818;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+.box-image .list .item:hover{
+    background-color: #252525;
+}
+.box-image .list .item img{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.box-image .list .item .play{
+    position: relative;
+}
+.box-image .list .item .play .fa {
+    position: absolute;
+    right: 10px;
+    top: -60px;
+    padding: 18px;
+    background-color: var(--contrast-color);
+    border-radius: 100%;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+.box-image .list .item:hover .play .fa{
+    opacity: 1;
+    transform: translateY(-20px);
+}
+.box-image .list .item h3{
+    color: var(--white);
+    font-size: 14px;
+    margin: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+.box-image .list .item p{
+    color: var(--letter-gray);
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+    text-align: center;
 }
