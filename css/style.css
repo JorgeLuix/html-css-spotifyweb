@@ -212,6 +212,7 @@ li,a {
     border-radius: 100%;
     opacity: 0;
     transition: all ease 0.4s;
+    color:#000000;
 }
 .box-image .list .item:hover .play .fa{
     opacity: 1;
@@ -245,15 +246,24 @@ li,a {
    width: 20%;
 }
 .sinister-lef {
+    width: 230px;
     display: flex;
     align-items: center;    
+}
+.controls-bar {
+    width: 40%;
+}
+.sound-right {
+    width: 230px;
 }
 .sinister-lef .txt {
     padding-left: 10px;
 }
-#controls .btn-controll{
-    margin: 0;
+#controls .btn-controll, .sound-right{
+    display: flex;
+    justify-content: center;
    align-items: center;
+   
 }
 #controls .btn-controll span {
     margin: 0.5em;
@@ -269,8 +279,20 @@ li,a {
     height: 5px;
     background-color: var(--letter-gray);
     border-radius: 10px;
-    margin: 0.1em;
+    margin: 0.2em;
+}
 
+#sound .controls-right span {
+    padding: 5px;
+    font-size: 20px;
+
+}
+#sound .bar-small {
+    width: 50%;
+    height: 5px;
+    background-color: var(--letter-gray);
+    border-radius: 10px;
+    margin: 0.2em;
 }
 
 /**************PLAYBAR*************/
