@@ -56,7 +56,9 @@ body {
     color: bisque;
     border-radius: 20px;
     text-decoration: none;
-
+}
+.butom:hover {
+    transform: scale(1.1);
 }
 /**********UTILITIES*********/
 .wrapper {
@@ -86,6 +88,7 @@ body {
     padding: 20px;
     overflow: hidden;
 }
+
 .box-nav {
     width: 100%;
     height: calc(100% - 80px);
@@ -93,7 +96,7 @@ body {
 .bottom-box {
     width: 100%;
     height: 80px;
-    border: 1px solid aqua;
+   
 }
 .logo-primary, .logo-small img{
     width: 70%;
@@ -120,13 +123,47 @@ body {
 .nav-home a:hover, 
 .nav-home a.fisso{  
     border-left: 3px solid var(--contrast-color);
+    
+}
+.nav-home a:hover{
+    color: var(--white);
 }
 .nav-home span {
     padding-left: 5px;
 }
+
+.bottom-box img {
+    width: 15%;
+}
+.bottom-box a{
+    color: var(--letter-gray);
+    padding: 2px 0;
+}
+hr {
+    height: 2px;
+    background-color: var(--letter-gray);
+}
+.bottom-box span,h4 {
+    padding-left: 5px;
+
+}
+.bottom-box a:hover {
+    color: var(--white);
+}
+.bottom-box .profilo img {
+    background-color: var(--letter-gray);
+    border-radius: 50%;
+    width: 30px;
+    
+}
+
 li,a {
     text-decoration: none;
     list-style: none;
+}
+li,a:hover{
+    color: var(--white);
+    transform: scale(1.1);
 }
 .nav-home li{
     padding: 10px 0;
@@ -134,9 +171,14 @@ li,a {
 .nav-home a {
     color: var(--letter-gray);
 }
+
 .playlist a,li {
     padding: 10px 0;
     color: var(--letter-gray);
+}
+#playlist li, a:hover {
+    color: var(--white);
+    transform: scale(1.1);
 }
 #play-list .di-flex{
     padding: 15px 0;
@@ -180,6 +222,10 @@ li,a {
 .section nav ul li:hover:after,
 .section nav ul li.unico:after {
     background-color: var(--contrast-color);
+}
+.section nav ul li a:hover {
+    color: var(--white);
+    transform: scale(1.1);
 }
 .call{
     position: fixed;
@@ -346,6 +392,10 @@ li,a {
     border-radius: 10px;
     margin: 0.2em;
 }
+.controls-bar .btn-controll #play-music  {
+    transform: scale(1.2);
+    color: white;
+}
 
 /**************PLAYBAR*************/
 
@@ -370,7 +420,7 @@ li,a {
     }
 }
 @media screen and (max-width: 576px) {
-    .nav-contain {
+    .nav-main {
         width: 60px;
     }
    
@@ -379,11 +429,38 @@ li,a {
     }
     .logo-small{
         display: block;
+        width: 50%;
     }
     .logo-primary{
         display: none;
     }
+    .nav-home span {
+        display: none;
+    }
+    .nav-home img {
+        display: block;
+        width: 20%;
+    }
+    hr {
+        display: none;
+    }
+    #play-list ul li span {
+        display: none;
+    }
+    #play-list .di-flex h4,span,i {
+        display: none;
+    }
+    .justify-center {
+        justify-content: center;
+    }
     
 }
-
+@media screen and (max-width: 400px) {
+    .image-col {
+        width: 100%;
+    }
+    .justify-center {
+        justify-content: center;
+    }
+}
 
